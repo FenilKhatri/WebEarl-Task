@@ -27,12 +27,6 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 button, input {
     cursor: pointer;
 }
@@ -241,6 +235,7 @@ hr {
 }
 
 .left-part ul li {
+    padding: 5px 0;
     font-size: 17px;
     color: #1f2b4d;
     position: relative;
@@ -259,7 +254,7 @@ hr {
 }
 
 .image-card img {
-    width: 90%;
+    width: 100%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
 }
@@ -305,9 +300,10 @@ h2 {
     justify-content: space-between;
     gap: clamp(20px, 5vw, 70px);
     padding: clamp(20px, 5vw, 40px);
-    border-radius: 0 100px 100px 0;
+    border-radius: 0 40px 40px 0;
     width: 100%;
     max-width: 1200px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .section-four-title {
@@ -356,10 +352,10 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-radius: 80px 0 0 80px;
+    border-radius: 40px 0 0 40px;
     text-align: left;
-    padding: 40px;
-    gap: 30px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .about-section-text > .text {
@@ -444,7 +440,6 @@ footer {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.8);
 }
-
 @media (max-width: 1200px) {
     .hero-section {
         gap: 80px;
@@ -554,10 +549,6 @@ footer {
         color: var(--white);
     }
 
-    ::placeholder {
-        color: white;
-    }
-
     .hero-text {
         font-size: clamp(14px, 3vw, 16px);
     }
@@ -574,6 +565,13 @@ footer {
     .left-part {
         border-radius: 30px;
         text-align: center;
+    }
+
+    .image-card img {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .left-part ul li {
