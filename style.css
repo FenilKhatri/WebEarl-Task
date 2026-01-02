@@ -562,6 +562,10 @@ footer {
         background: none;
     }
 
+    ::placeholder {
+        color: white;
+    }
+
     .left-part {
         border-radius: 30px;
         text-align: center;
